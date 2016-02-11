@@ -38,8 +38,12 @@ var Vector = class {
 
 var Thing = class {
   constructor(args) {
-    @x = args.x;
-    @y = args.y;
-    @z = args.z;
+    @x = args.x || 0;
+    @y = args.y || 0;
+    @z = args.z || 0;
+    @stepsPerSecond = args.stepsPerSecond || 1;
+  }
+  step(n) {
+    n ||= 1;
   }
 };
