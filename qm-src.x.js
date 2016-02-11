@@ -38,6 +38,8 @@ var Vector = class {
 
 var Thing = class {
   constructor(args) {
-    
+    @x = args.x;
+    @y = args.y;
+    @z = args.z;
   }
 };
